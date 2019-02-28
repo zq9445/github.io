@@ -6,7 +6,34 @@
 		@font-face {
 			font-family: digit;
 		}
-	</style>
+		
+		.text{
+			
+			background-image: -webkit-linear-gradient(left,blue,#66ffff 10%,#cc00ff 20%,#CC00CC 30%, #CCCCFF 40%, #00FFFF 50%,#CCCCFF 60%,#CC00CC 70%,#CC00FF 80%,#66FFFF 90%,blue 100%);
+			-webkit-text-fill-color: transparent;/* 将字体设置成透明色 */
+			-webkit-background-clip: text;/* 裁剪背景图，使文字作为裁剪区域向外裁剪 */
+			-webkit-background-size: 200% 100%; 
+			-webkit-animation: masked-animation 4s linear infinite;
+			font-size: 35px;
+		}
+		.comments{
+			
+			background-image: -webkit-linear-gradient(left,blue,#66ffff 10%,#cc00ff 20%,#CC00CC 30%, #CCCCFF 40%, #00FFFF 50%,#CCCCFF 60%,#CC00CC 70%,#CC00FF 80%,#66FFFF 90%,blue 100%);
+			-webkit-text-fill-color: transparent;/* 将字体设置成透明色 */
+			-webkit-background-clip: text;/* 裁剪背景图，使文字作为裁剪区域向外裁剪 */
+			-webkit-background-size: 200% 100%; 
+			-webkit-animation: masked-animation 4s linear infinite;
+			font-size: 24px;
+		}
+		@keyframes masked-animation {
+			0% {
+				background-position: 0  0;
+			}
+			100% {
+				background-position: -100%  0;
+			}
+		}
+</style>
 <link href="default.css" type="text/css" rel="stylesheet">
 <script src="hm.js"></script><script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="garden.js"></script>
@@ -28,24 +55,25 @@
 <div id="mainDiv">
 <div id="content" style="width: 1110px; height: 625px; margin-top: 168.5px; margin-left: 725px;">
 <div id="code">
-<span class="comments">herName</span><br><p></p><p></p><p>
-<span class="space"><span class="comments">first</span><br></span></p><p></p><p></p><p>
-<span class="space"><span class="comments">second</span><br></span></p><p></p><p></p><p>
-<span class="space"><span class="comments">third</span><br></span></p><p></p><p></p><p>
-<span class="space"><span class="comments">fouth</span><br></span></p><p></p><p></p><p>
-<span class="space"><span class="comments"></span><br></span></p><p></p><p></p><p>
+<span class="comments">Mrs.Zhou</span><br><p></p><p></p><p>
+<span class="space"><span class="comments">I love three things in this world.</span><br></span></p><p></p><p></p><p>
+<span class="space"><span class="comments">浮世万千，吾爱有三。</span><br></span></p><p></p><p></p><p>
+<span class="space"><span class="comments">Sun,moon and you.</span><br></span></p><p></p><p></p><p>
+<span class="space"><span class="comments">日、月与卿。</span><br></span></p><p></p><p></p><p>
+<span class="space"><span class="comments">Sun for morning ,moon for night ,and you forever</span><br></span></p><p></p><p></p><p>
+<span class="space"><span class="comments">日为朝，月为暮，卿为朝朝暮暮</span><br></span></p><p></p><p></p><p>
 <span class="space"><span class="comments"></span><br></span></p><p></p><p></p><p>
 </p></div>
 <div id="loveHeart">
 <canvas id="garden" width="670" height="625"></canvas>
 <div id="words">
-<div id="messages">
-我们已经在一起
+<div id="messages" class="text">
+我们已经认识了
 <div id="elapseClock"></div>
 </div>
 <div id="loveu">
-最爱你的<br>
-<div class="signature">myName</div>
+Logy<br>
+<div class="signature">Mr.Zhao</div>
 </div>
 </div>
 </div>
